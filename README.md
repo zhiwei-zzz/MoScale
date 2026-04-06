@@ -9,6 +9,7 @@
 - [ ] Release training code
 - [ ] Release inference code
 - [ ] Release checkpoints
+- [ ] Release editing code
 
 ## 📜 Citation
 
