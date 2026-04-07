@@ -1,7 +1,9 @@
 # Next-Scale Autoregressive Models for Text-to-Motion Generation
 
-<!-- [![arXiv](https://img.shields.io/badge/arXiv-XXXX.XXXXX-b31b1b.svg)](https://arxiv.org/abs/XXXX.XXXXX) -->
-[![Project Page](https://img.shields.io/badge/Project-Website-green)](https://zhiwei-zzz.github.io/MoScale)
+<p align="center">
+  <a href="https://arxiv.org/abs/2604.03799"><img src="https://img.shields.io/badge/arXiv-2604.03799-b31b1b.svg" alt="arXiv"></a>
+  <a href="https://zhiwei-zzz.github.io/MoScale"><img src="https://img.shields.io/badge/Project-Website-green" alt="Project Page"></a>
+</p>
 
 
 ## 📝 Todo
