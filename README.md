@@ -9,7 +9,7 @@
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-repo/MoScale.git
+git clone git@github.com:zhiwei-zzz/MoScale.git
 cd MoScale
 ```
 
