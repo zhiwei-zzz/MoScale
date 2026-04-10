@@ -1,0 +1,61 @@
+exp:
+  root_ckpt_dir: './checkpoint_dir'
+  root_log_dir: './log'
+  name: 'moscale'
+  device: 'cuda:0'
+  seed: 10306
+
+vq_name: "hrvqvae"
+vq_ckpt: "net_best_fid.tar"
+
+
+data:
+  name: 'humanml3d'
+  unit_length: 4
+  root_dir: '/your/path/dataset/HumanML3D'  # TODO: update to your dataset/HumanML3D path
+  joint_num: 22
+  dim_pose: 263
+  fps: 20
+  max_motion_length: 196
+  max_text_length: 20
+
+
+text_embedder:
+  dim_embed: 768
+  version: 'google/t5-v1_1-base'
+
+
+model:
+  latent_dim: 384
+  head_latent_dim: 768
+  num_layers: 16
+  mlp_ratio: 4
+  n_heads: 8
+  dropout: 0.1
+  attn_drop_rate: 0.
+  use_crossattn: True
+  attn_l2_norm: False
+  use_learned_token_map: True
+  infer_use_kvcache: True
+
+
+training:
+  batch_size: 64
+  max_epoch: 250
+  early_stop_epoch: 120
+  cond_drop_prob: 0.1
+  perturb_rate: [0.0, 0.6]
+  lr: 3.0e-4
+  log_every: 10
+  eval_every_e: 1
+  afuse: True
+  fp16: 1
+  tclip: 2.
+  ac: 1
+  twd: 0.05
+  twde: 0.05
+  sche: 'cos'
+  wp0: 0.005
+  wpe: 0.01
+  wp: 10
+  sample_level_times: [1, 2, 5, 10]

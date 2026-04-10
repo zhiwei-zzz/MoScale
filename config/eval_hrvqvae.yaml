@@ -1,0 +1,11 @@
+exp:
+  root_ckpt_dir: './checkpoint_dir'
+  device: 'cuda:0'
+
+vqvae_name: 'hrvqvae'  # set to your trained HRVQVAE experiment name (exp.name in train_hrvqvae.yaml)
+
+repeat_time: 20
+
+data:
+  name: 'humanml3d'
+  root_dir: '/your/path/dataset/HumanML3D'  # TODO: update to your dataset/HumanML3D path

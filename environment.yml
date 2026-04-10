@@ -1,0 +1,40 @@
+name: moscale
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8
+  - pip
+
+  - pip:
+    # PyTorch (CUDA 12.1)
+    - torch==2.4.1+cu121
+    - torchvision
+    - --extra-index-url https://download.pytorch.org/whl/cu121
+
+    # Flash Attention
+    - flash-attn==2.7.0.post2
+
+    # Hugging Face (T5 text encoder)
+    - transformers==4.46.3
+    - sentencepiece==0.2.0
+
+    # Core ML / numerics
+    - numpy
+    - scipy==1.10.1
+    - einops==0.8.0
+
+    # Visualization
+    - matplotlib==3.4.3
+    - imageio==2.9.0
+    - imageio-ffmpeg
+
+    # Training utilities
+    - tqdm==4.67.1
+    - wandb==0.21.1
+    - tensorboard==2.14.0
+
+    # Config
+    - pyyaml
