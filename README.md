@@ -41,7 +41,7 @@ dataset/
 
 Set `data.root_dir` in all `config/*.yaml` files to the `HumanML3D/` subdirectory, e.g. `/your/path/dataset/HumanML3D`.
 
-### 📥 Evaluator checkpoints
+### 📥 Checkpoints
 
 Download the motion evaluator, GloVe word vectors, and checkpoints:
 
